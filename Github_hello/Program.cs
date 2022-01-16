@@ -6,7 +6,7 @@ namespace Github_hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Witaj E00 :-)!");
         }
     }
 }
