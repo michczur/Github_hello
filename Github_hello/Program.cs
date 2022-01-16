@@ -4,21 +4,24 @@ namespace Github_hello
 {
     class Program
     {
-        static void Power(int number, int power)
+        static void Arythmetics_progression(int start, int diff, int end)
         {
-            for (int i = 1; i <= power; i++)
+            int resoult = 0;
+            for (int i = start; i <= start+end; i++)
             {
-                number = number * power;                
+                resoult= diff*end;
             }
-            Console.WriteLine(number);
+            Console.WriteLine(resoult);
         }
         static void Main(string[] args)
             {
-                Console.WriteLine("podaj podstawe");
-                int number = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("podaj wykladnik");
-                int power = Convert.ToInt32(Console.ReadLine());
-                Power(number, power);
+                Console.WriteLine("podaj początek");
+                int start = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("podaj róznice miedzy kolejnymi elementami ciagu");
+                int diff = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("podaj ilosc elementow ciagu");
+                int end = Convert.ToInt32(Console.ReadLine());
+                Arythmetics_progression(start, diff, end);
 
             }
     }
