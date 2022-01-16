@@ -4,21 +4,21 @@ namespace Github_hello
 {
     class Program
     {
-        static void Price_list(double price, int lines)
+        static void Power(int number, int power)
         {
-            for (int i = 1; i <= lines; i++)
+            for (int i = 1; i <= power; i++)
             {
-                Console.WriteLine("Liczba sztuk:" + i + " łaczna cena: " + price * i + " zł");
+                number = number * power;                
             }
-
+            Console.WriteLine(number);
         }
         static void Main(string[] args)
             {
-                Console.WriteLine("podaj cene");
-                double price = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("podaj ilosc produktow");
-                int lines = Convert.ToInt32(Console.ReadLine());
-                Price_list(price, lines);
+                Console.WriteLine("podaj podstawe");
+                int number = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("podaj wykladnik");
+                int power = Convert.ToInt32(Console.ReadLine());
+                Power(number, power);
 
             }
     }
