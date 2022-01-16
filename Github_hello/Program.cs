@@ -6,12 +6,13 @@ namespace Github_hello
     {
         static void Arythmetics_progression(int start, int diff, int end)
         {
-            int resoult = 0;
-            for (int i = start; i <= start+end; i++)
+            int resoult = start;
+            for (int i = 0; i < end; i++)
             {
-                resoult= diff*end;
+                resoult = resoult + diff;
+                Console.WriteLine(resoult);
             }
-            Console.WriteLine(resoult);
+            
         }
         static void Main(string[] args)
             {
